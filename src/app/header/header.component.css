@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  width: 100%;
+  background-color: dodgerblue;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-family: "Al Nile", sans-serif;
+}
+
+.input {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.isShow {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+}
