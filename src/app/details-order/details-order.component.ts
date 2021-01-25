@@ -14,14 +14,13 @@ export class DetailsOrderComponent implements OnInit{
 
   constructor(private ordersService: OrdersService, private route: ActivatedRoute) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id').charAt(0);
     this.getOrderPositions(Number(id));
   }
 
-  getOrderPositions(id: number){
+  getOrderPositions(id: number): void{
     this.ordersService.getOrderPositions(id).subscribe((data) => {
-      console.log(data);
       this.orderPositions = data;
     });
   }
