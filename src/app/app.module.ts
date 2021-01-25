@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
-import {InputDirective} from './directivies/input-directive.directive';
 import {RouterModule} from '@angular/router';
 import {ListOrdersComponent} from './list-orders/list-orders.component';
 import {DetailsOrderComponent} from './details-order/details-order.component';
@@ -16,7 +15,6 @@ import {DetailsOrderItemComponent} from './details-order-item.component/details-
   declarations: [
     AppComponent,
     HeaderComponent,
-    InputDirective,
     ListOrdersComponent,
     DetailsOrderComponent,
     OrderItemComponent,

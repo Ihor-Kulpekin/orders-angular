@@ -9,8 +9,7 @@ import {catchError, map} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class OrdersService {
-  constructor(private httpClient: HttpClient) {
-  }
+  constructor(private httpClient: HttpClient) {}
 
   getOrders(): Observable<Orders[]> {
     let headers = new HttpHeaders();
