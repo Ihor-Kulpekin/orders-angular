@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
-import {InputDirective} from './directivies/input-directive.directive';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {FooterComponent} from './footer/footer.component';
@@ -12,7 +11,6 @@ import {FooterComponent} from './footer/footer.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    InputDirective,
     FooterComponent,
   ],
   imports: [
@@ -26,4 +24,4 @@ import {FooterComponent} from './footer/footer.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
